@@ -1,0 +1,7 @@
+# m3l4 — Pytania na Q&A
+
+- **CLI vs MCP — gdzie naprawdę jest break-even token-wise.** ~27K vs ~114K na ten sam scenariusz to różnica >4x. Macie scenariusz, w którym MCP wygrywa kosztem (np. długi loop eksploracji, gdzie ciągłe parsowanie YAML-i z dysku wychodzi drożej), czy CLI w 10xDevs jest domyślne **zawsze**?
+- **Vision tylko w MCP, nie CLI — kiedy to realnie boli.** Tryb wizyjny (`--caps=vision`) wymaga MCP. Czy w typowym MVP w ogóle dochodzi do potrzeby vision w **testach** (a nie w debugowaniu z M3L5)? Bo jeśli regresje wizualne robi `toMatchSnapshot`, vision w testach wydaje się przegranym wyborem — chyba że mam coś innego niż Argos/Lost Pixel.
+- **`storageState` vs prawdziwy login w testach.** Lekcja słusznie pisze, że login per test marnuje tokeny i kruszy testy. Ale dwa testy (jeden na rejestrację, jeden na login) zostają. Jak konfigurujecie `playwright.config.ts`, żeby auth-testy NIE korzystały ze storageState, a reszta tak? Osobny project czy `test.use({ storageState: undefined })` per test?
+- **Composable fixtures — kiedy POM nadal ma sens.** Lekcja mówi "200+ testów". Czy w 10xDevs realnie ktoś dochodzi do 200 testów E2E w MVP, czy fixtures to po prostu "domyślnie zawsze, nie zawracajcie sobie głowy POM"?
+- **Healer w 10xDevs — domyślnie włączony, czy opt-in.** Sentry-style "naprawa po skoku" brzmi atrakcyjnie, ale właśnie maskuje bug logiki biznesowej. Czy rekomendujecie healer dla testów selektorowych (UI changes) i wyłączenie dla testów asercji (data integrity)? Da się to skonfigurować per test/project?

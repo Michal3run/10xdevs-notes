@@ -1,0 +1,7 @@
+# m2l5 — Pytania na Q&A
+
+- **`/goal "20 turns max"` — jak ustawiać limit turn'ów dla `phase`?** Lekcja pokazuje przykład z `Stop after 20 turns`. Macie heurystykę per typ slice'a — np. małe F-XX 10 turn, slice z testami 30, slice z migracją 50? Czy to bardziej "ustaw 20 i zobacz, kiedy ewaluator zakończy sam"?
+- **Ralph Wiggum technique vs `/goal` — kiedy autonomic loop ma sens w MVP?** Geoffrey Huntley pisze o `while true` w bashu. `/goal` ma już ewaluatora. Czy w 10xDevs realnie dochodzi do scenariusza, w którym kursant odpala bashową pętlę poza Claude Code, czy `/goal` w pełni zastępuje?
+- **Detection wspólnych zasobów — automatyzacja.** Sprawdzanie wspólnych plików/kontraktów/migracji to dziś prompt do agenta. Macie własny skill (`/10x-parallel-check` lub podobny) na pytanie "czy te dwa change-id mogą iść równolegle", czy zostawiacie to jako otwarty prompt z lekcji?
+- **PR per worktree, ale review wspólne — jak nie powtórzyć kontekstu.** Solo developer i tak czyta każdy PR sam. Czy `/10x-impl-review` w jednej sesji obsługuje oba PR-y na zmianę, czy oddzielne sesje per branch (czystsze) — która ścieżka mniej zżera tokenów w typowym MVP?
+- **Wyłączenie hooks/triggerów per worktree.** W M3L3 dochodzą hooki per-edit (lint, typecheck). Dwa worktrees naraz = dwa razy hook na każdą edycję. Czy konfigurujecie hooki tak, żeby znały working directory, czy zostawiacie je jako "uruchamiaj zawsze, koszt akceptowalny"?

@@ -1,0 +1,7 @@
+# m2l4 — Pytania na Q&A
+
+- **Cursor `@web` vs Exa MCP — duplikacja?** Lekcja przyznaje, że Cursor pod `@web` używa Exy natywnie. Rekomendujecie kursantom Cursora dorzucanie Exa MCP osobno (dla `@exa` jako tool, kosztem dodatkowych tokenów), czy `@web` jest wystarczający i Exa MCP tylko dla Claude Code/Codex?
+- **Context7 free 1000 wywołań — kiedy się wyczerpuje.** W projekcie kursowym 1000 to dużo. Realnie widzicie kursantów, którzy tę pulę wykorzystują w pierwszych dwóch tygodniach M2 (każde `/10x-plan` z `@docs`), czy raczej free wystarcza do końca kursu? Plan $10/mc — kiedy realnie się opłaca?
+- **`/10x-research` na repo bez `lessons.md`.** Skill wczytuje `lessons.md` jako kontekst dla zawężenia. Jeśli kursant nie odpalił jeszcze `/10x-lesson` (M1L4 z dziurawym onboardingiem), research mieli się głębiej. Macie dane: czy projekty bez `lessons.md` mają zauważalnie gorsze `research.md`, czy to drugorzędne?
+- **`/10x-frame` na MVP — kiedy realnie kursant powinien sięgnąć?** Lekcja mówi „przy MVP najpewniej go nie odpalisz". Ale w 3. edycji widzieliście konkretne sytuacje (np. kursant tonie w 3 sesje na S-04), kiedy frame realnie odblokował, czy zostawiacie to dla projektów po-kursowych?
+- **Halucynacje API w Context7 — co robić, gdy biblioteka jest zbyt nowa.** `resolve-library-id` znajdzie repo, ale `query-docs` może zwrócić ucięte/przestarzałe fragmenty (np. preview API). Jak rozpoznajecie, że to problem z Context7 vs problem z samą biblioteką? Fallback: forge na `WebFetch` plus surowe README z GitHuba?

@@ -1,0 +1,7 @@
+# m2l3 — Key Takeaways
+
+- Czytaj diff w kolejności: **zakres → granice ryzyka (auth, zapis danych, migracje, sekrety) → lokalne wzorce → testy**. „Plik zmieniony" widać. Plik, którego agent **nie powinien był dotykać**, zauważa tylko czytanie diffu z planem w drugim oknie.
+- Triage findingu = decyzja: fix now / fix differently / skip / **record as lesson**. Nie każdy finding zasługuje na fix — observation o niskim impact zwykle skip, a powtarzalny wzorzec (np. „server actions używają auth-guard pattern, nie ręcznego `userId`") trafia przez `/10x-lesson` do `lessons.md`, żeby kolejny `/10x-plan` zaczynał już z tym kontekstem.
+- Wysoka severity ≠ wysoki impact — to dwie różne osie. Krytyczny brak walidacji w jednym handlerze (high severity, low impact) naprawiasz od ręki. Sugestia zmiany nazwy statusu w bazie (warning, high impact: front + back + dane historyczne + docs) wymaga osobnego planu, nie kliknięcia "fix".
+- Zielony test = brak dowodu na regresję. Test pisany przez agenta to też kod — sprawdzaj, czy asercja pyta o **wymagane zachowanie** (PRD/kontrakt), czy tylko odbija to, co właśnie wygenerował agent. Drugie to zabetonowanie buga, nie ochrona przed nim.
+- Werdykt po triage to twoja decyzja, nie agenta. Approve / request changes / block. Skill przygotował raport — ostatnie kliknięcie należy do ciebie i ono buduje odpowiedzialność. „Approve bez obrony" jest antywzorcem nawet, gdy scorecard mówi 6/6.

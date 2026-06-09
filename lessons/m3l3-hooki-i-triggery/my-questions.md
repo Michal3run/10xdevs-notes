@@ -1,0 +1,7 @@
+# m3l3 — Pytania na Q&A
+
+- **Hook na typecheck vs Vitest related — który pierwszy w MVP?** Lekcja sugeruje, że typecheck w większych projektach należy do pre-commit. W typowym kursowym 10xCards (Astro + TS) typecheck na drugim ekranie zajmuje ile? Polecacie zacząć od typechecka w per-edit, przesunąć dopiero gdy zacznie boleć, czy od razu wpiąć w Lefthook?
+- **PostToolUse 3 razy przy edycji 3 plików — kiedy realnie boli.** W lekcji wspomniane: każdy hook odpala się per-tool-use. Macie wzorzec ograniczania tego matcherem (np. tylko `*.ts` w `src/server/`)? Bo prosty `Write|Edit` na całe repo z testami przy każdej edycji to potencjalnie minuty zamiast sekund.
+- **`async: true` na PostToolUse — kiedy bezpieczne.** Hooki async nie blokują pętli agenta. Logiczne tylko dla weryfikacji „informacyjnych" (statystyki, notyfikacje). Czy macie konkretne kursowe użycie `async`, czy raczej zostawiacie to jako "ciekawostka, nie dla MVP"?
+- **Hook się nie odpala — jak diagnozować.** Lekcja wymienia znane ograniczenia (Stop hooks w Skills/Plugins, Codex trust, Copilot matchery). Jaki jest standardowy debug flow — `claude --debug` + log w hook command, GitHub Issues konkretnego narzędzia, czy macie własną check-listę "warunki wstępne"?
+- **1Password agent-hooks — pierwszy krok do oficjalnego standardu?** Skrypt instalujący te same hooki do Cursor/Claude/Windsurf jest ciekawym sygnałem. Czy w 3. edycji rekomendujecie start od tego repo, czy raczej "skonfiguruj jedno narzędzie, opanuj wzorzec, potem ewentualnie portuj"?

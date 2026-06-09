@@ -1,0 +1,7 @@
+# m2l1 — Pytania na Q&A
+
+- **Estymaty świadomie odrzucone — jak komunikować postęp na zewnątrz?** `/10x-roadmap` nie generuje T-shirt size'ów ani story pointów. Stakeholder/PM oczekujący "Day 1, Week 2" przy backlogu w Linear z labelkami `slice` / `foundation` — co u was zastępuje estymaty w komunikacji? `Status` + `Prerequisites` jako proxy progresu, czy dorzucacie własne pole?
+- **`main_goal: speed` vs `quality` — kiedy realnie się to różnicuje?** Wszystkie trzy opcje (`speed`/`quality`/`learning`) wpływają na kolejność, gdy slice'y są równoważne. Macie konkretny przykład z 3. edycji, gdzie zmiana `main_goal` przemeblowała roadmapę nie kosmetycznie, tylko zmieniła north star?
+- **Foundation jako spike — kryteria zamknięcia.** F-02 `openrouter-privacy-spike` nie ma user-visible outcome, ale musi się skończyć. Co stanowi wasz Definition of Done dla foundation typu spike — wpis w `decision-log`, ADR, czy wystarczy zamknięcie Unknown w slice'ie zaprezerwowanym?
+- **Kursant zatwierdza dziurawe PRD (Vision <3) i jedzie dalej.** Skill pozwala. Macie obserwacje, jak wygląda taka roadmapa po tygodniu — czy "blocked slices" zamieniają się w gotowe, czy raczej w znak, że projekt utknął i kursant prosi o reset?
+- **Linear free vs GitHub Projects — co wybieracie polecając kursantowi solo.** Linear MCP jest premierowy i agent-friendly. GitHub Projects mają tańszy próg (już macie repo). Czy wasza rekomendacja to `Linear MCP` dla pełnego wzorca pracy z agentem, czy `gh issue` jako mniejsze tarcie?

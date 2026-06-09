@@ -1,0 +1,7 @@
+# m3l1 — Pytania na Q&A
+
+- **`/10x-test-plan` na greenfieldzie po M1L5 — co pokazuje wywiad?** Skill skraca pytanie o niedotestowane miejsca, gdy testów nie ma w ogóle. Co realnie wnosi mapa ryzyk dla projektu, w którym jeszcze nie ma kodu poza scaffoldingiem? Odraczacie test plan do końca M2, czy zachęcacie do iteracyjnego refresh po każdym dużym slice'ie?
+- **Quality gates w test-planie 10xCards — odroczone post-edit hooki i CI w v1.** Lekcja podaje 10xCards jako przykład, gdzie hooki per-edit i CI są **świadomie odroczone** w v1. Co konkretnie sygnalizuje moment „włącz CI gating"? Liczba slice'ów dowieziono, pierwszy regres złapany lokalnie, czy raczej "po module 3 zawsze"?
+- **Skala impact × likelihood — co kursanci najczęściej źle ocenili.** Macie regularne miss'y, w których kursanci stawiają wszystko na "wysoki × wysoki" i nic nie ma niskiego priorytetu? Albo odwrotnie — wszystko na środku i mapa nie pomaga w priorytetyzacji?
+- **Refresh test-planu vs nowy plik.** `--refresh` audytuje zmiany. Czy w 3. edycji widzicie kursantów, którzy zamiast `--refresh` po zmianie stacku odpalili `/10x-test-plan` od zera (i utracili historię decyzji)? Jest to realny błąd, czy raczej teoria z brzegu?
+- **Test plan bez kodu (sam PRD) — kiedy odpalić.** Skill zatrzymuje się, jeśli to dopiero PRD. Zostawiacie to jako restrykcję, czy w realnym workflow kursant powinien już po M2L1 (mając roadmapę) odpalać test plan i dopisywać ryzyka per slice? Czy raczej dopiero po M2L2 i pierwszej fazie kodu?

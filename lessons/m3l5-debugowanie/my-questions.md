@@ -1,0 +1,7 @@
+# m3l5 — Pytania na Q&A
+
+- **Sentry MCP pre-1.0 — produkcyjnie czy do nauki?** Nazwy narzędzi mogą się zmienić. Macie politykę „w MVP używaj Sentry MCP, ale skonfiguruj też webhook do Slacka jako fallback", czy bardziej "tylko do nauki, w realnych projektach API + custom skill"?
+- **`captureConsoleIntegration({ levels: ['warn', 'error'] })` — kiedy zaczyna palić limit free Sentry.** 5000 zdarzeń/mc darmowego planu. Wraz z `levels: ['warn']` warning z każdej oceny karty (np. nasz bug `update_failed` × 100 użytkowników × 10 ocen) zjada limit błyskawicznie. Macie konkretny próg ruchu dla switcha na `levels: ['error']` + `Sentry.captureException` ręcznie?
+- **Połknięty błąd — jak go znajdować proaktywnie.** Lekcja sugeruje grep z agentem na try/catch + log + return 200. Macie konkretny custom skill (`/10x-find-swallowed`) lub regex/AST matcher, który polecacie? Bo szukanie ręcznie po slice'ach M2 to godziny.
+- **VLM w debugowaniu — Gemini Flash domyślnie?** Kategoria budżetowa to dziś Gemini Flash. Jak to się wpina w workflow z Claude Code (default agent)? Czy Sentry MCP + Claude Code sięgają po Gemini Flash przez osobny tool, czy raczej "wytłumacz tu fragment screenshota" zostaje w ramach tego samego modelu?
+- **Pipeline nie złapał, ale test-plan przewidział ryzyko.** W lekcji explicite: „nazwane ryzyko bez fazy testów ≠ bramka". Czy w 3. edycji były pomysły, żeby `/10x-test-plan --status` ostrzegał o **niezbudowanych** fazach przed mergem do main, czy zostawiacie to na świadomość kursanta?

@@ -1,0 +1,7 @@
+# m2l5 — Key Takeaways
+
+- Zacznij od dwóch slice'ów, nie pięciu agentów. Lekcja mówi to wprost — to nie ostrożność, tylko własna przepustowość decyzyjna i review. Zanim ruszysz: poproś agenta o sprawdzenie wspólnych plików, kontraktów, migracji i usług zewnętrznych dla planowanych slice'ów. Jeśli istnieje overlap, idź sekwencyjnie.
+- Worktree izoluje **stan gita i pliki robocze**, ale nie środowisko. Dwa worktrees nadal walczą o ten sam port dev-servera, lokalną bazę i sandbox płatności. Trzeba albo przesuwać porty (`PORT=3000` vs `PORT=3001`), albo akceptować, że dev-serwer odpalasz tylko w jednym naraz.
+- `/goal` (Claude Code, Codex) ≠ `/10x-implement`. Używaj, gdy plan jest **konkretny, zakres zamknięty, warunki zakończenia mierzalne**. Mały model-ewaluator po każdej turze decyduje "stop/kontynuuj"; ty kontrolę odzyskujesz dopiero w PR. Dla złożonych zmian (decyzje w trakcie) zostań przy interaktywnym `/10x-implement`.
+- Nowe slice'y odkryte podczas implementacji (drobne UX, brakujące akcje) **nie dopisuj do bieżącego slice'a**. Dorzuć S-NN do roadmapy z konsekwentnym formatem (status `planned`, `Prerequisites`, `Parallel with`). To sztuka, nie bug — zmiana w trakcie pracy jest naturalna; zachowanie kształtu roadmapy jest wymogiem.
+- Ortkiestratorzy (Cursor Agents, Antigravity, Superset, Conductor) rotują co kwartał — wzorzec "izoluj kontekst → deleguj cel → recenzuj wynik w jednym miejscu" zostaje. Marcin po Supersecie wrócił do Claude Code w terminalu Ghostty z zakładkami. Wybierz to, w czym dłużej zostajesz.

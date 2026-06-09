@@ -1,0 +1,7 @@
+# m2l3 — Pytania na Q&A
+
+- **Two-pass review (raport → analiza w drugiej sesji) — kiedy to się NIE opłaca?** Lekcja rekomenduje zapisać raport i wrócić do recenzji przez `/10x-impl-review @path`. Czy przy małych F-XX (≤3 pliki) widzicie kursantów, którym dwukrotny review zżera ROI, czy to zawsze tańsze niż bezpośrednia analiza?
+- **Sycophancy w impl-review.** Ten sam model, który napisał implementację, ocenia ją w `/10x-impl-review`. Czy w 3. edycji kazaliście kursantom uruchamiać review w innym kontekście (świeża sesja, inny model), czy raczej spokojnie — Plan Adherence i Scope Discipline są wystarczająco mechaniczne, żeby model je policzył uczciwie?
+- **`Record as lesson` — kiedy zatrzymać przed dopisaniem reguły?** `lessons.md` rośnie po każdym review, a u-shaped attention z M1L4 mówi, że długi plik instrukcji jest słabiej egzekwowany. Macie heurystykę: ile reguł w `lessons.md` to dużo, czy raczej "dopisuj zawsze, prune raz na moduł"?
+- **Pattern Consistency vs proponowanie lepszego.** Agent pisze poprawnie, ale nie według lokalnego wzorca. „Fix differently" oznacza ręczne wskazanie wzorca. Polecacie wpisywać wzorzec w `lessons.md` przy pierwszym napotkaniu, czy dopiero po drugiej powtórce — bo każdy nowy wpis w `lessons.md` zwiększa koszt instrukcji per kolejne zadanie?
+- **Block vs request changes — granica praktyczna.** Block sugeruje powrót do planu/PRD, request changes zostawia w cyklu. Jaki konkretny sygnał stawia diff w "block" — zmiana >5 plików spoza scope, sygnał security, czy raczej ilość krytycznych findings?

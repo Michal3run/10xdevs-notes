@@ -1,0 +1,7 @@
+# m3l2 — Pytania na Q&A
+
+- **Mutation testing w MVP — kiedy zaczyna się opłacać?** Lekcja jasno mówi „selektywna bramka, nie linter". Macie konkretne sygnały, że pora odpalić Stryker — np. dwie niezależne sesje testów na ten sam moduł, suite >50 testów, pierwszy false-green w produkcji? Czy jest to bardziej "zostaw na drugi projekt po-kursowy"?
+- **Stryker timeout liczony jak killed — kiedy realnie sygnalizuje regres.** Mutant, który powoduje nieskończoną pętlę, jest „złapany" mimo że żadna asercja go nie wykryła. Czy macie kursantów, których to wykolejało (myśleli że są dobrzy, a tylko mutacja była zbyt agresywna)?
+- **`/10x-tdd` na środowisku bez setupu testów — kursant pójdzie ścieżką oporu.** Skill zakłada, że runner istnieje. Macie wzorzec: ile osób próbowało odpalić TDD na repo bez Vitesta i utknęło? Czy `/10x-test-plan` na początku M3L1 wystarczająco pcha do zrobienia bootstrap przez `/10x-implement` najpierw?
+- **6 prawie identycznych testów Risk #7 w 10xCards (case study).** `it.each` zamiast 6 kopii. Co jest mocniejszym sygnałem, że agent generuje nadmiar — sama liczba testów na ryzyko, czy raczej Stryker pokazujący 0 zabitych mutantów? Bo jedno wymaga oka, drugie raportu.
+- **`AI_AGENT=1` od Vitest 4.1 — adopcja w 3. edycji.** Reporter agentowy tnie token output. Czy domyślnie wpisujecie to w `vitest.config.ts` projektu kursowego (10x-astro-start), czy zostawiacie kursantowi do odkrycia? Bo różnica w tokenach z hooków per-edit (M3L3) bywa znaczna.

@@ -1,0 +1,7 @@
+# m2l2 — Key Takeaways
+
+- `change-id` (np. `gate-product-routes`, `atomic-save-to-deck`) to klej między pozycją z roadmapy, folderem `context/changes/<change-id>/`, plikami (`change.md`/`plan.md`/`plan-brief.md`) i komendą `/10x-implement <change-id> phase N`. Jedna nazwa, jedno miejsce pamięci — odpowiada na pytanie "o której konkretnej zmianie rozmawiamy".
+- Plan w pliku > Plan Mode w UI. Wbudowany Plan Mode ginie z sesją; `plan.md` przeżyje session reset, hand-off do innej osoby i powrót po dwóch tygodniach. Historia rozmowy jest krucha, plik w repo jest trwały.
+- `plan-brief.md` to kontrakt decyzji, nie streszczenie. Gdy plan zaczyna nieść decyzje kontraktowe (rating scale, kształt schematu, edit-vs-reset policy), brief jest jedynym miejscem, gdzie widać uzasadnienie — czemu cztery przyciski, nie pięć; czemu reset, nie modyfikacja.
+- HALT w fazie: jeśli agent odkrywa fakt zmieniający **kontrakt planu** (zakładał istniejący `Deck`, w repo nie ma; zakładał trzy pliki, agent chce dziesięć), nie dokręcaj kolejnym promptem. Wróć do `plan.md`, popraw, dopiero kontynuuj. Mały mismatch (literówka, inny eksport) adaptujesz w miejscu.
+- Lokalne unknowns niech rozstrzygnie `/10x-plan` (czy istnieje komponent X, jak nazywa się helper). Zewnętrzne unknowns (czy biblioteka wspiera scale Y) → osobny research. „Researchowanie na zapas" jest stratą — research robi robotę, gdy realnie blokuje decyzję.
