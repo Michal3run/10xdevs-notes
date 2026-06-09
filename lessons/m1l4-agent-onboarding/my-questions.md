@@ -1,0 +1,7 @@
+# m1l4 — Pytania na Q&A
+
+- **Test inkluzji w cyfrach.** Wygenerowany `AGENTS.md` po `/init` typowo zawiera "use TypeScript strict mode", "validate inputs", podsumowanie struktury katalogów. Większość przejdzie test inkluzji negatywnie. Macie heurystykę "po `/init` usuń ~30-50 % wpisów", czy to mocno zależy od stacku/projektu? Co w 3. edycji najczęściej zostaje w pliku, a powinno wylecieć?
+- **Granularność dla MVP.** ETH+DeepMind pokazało redundancję jako głównego winowajcę kosztów. Czy realnie obserwujecie, że w MVP poniżej 5 modułów obszarowe `AGENTS.md` (np. `src/api/`, `src/db/`) wnoszą value, czy jeden plik <200 linii w roocie wystarcza? Jest jakiś próg liczby modułów, powyżej którego rozdzielacie?
+- **`/10x-lesson` vs `AGENTS.md` — kryterium awansu.** Lekcja zostaje w `lessons.md`, czasem wraca do `AGENTS.md`. Kiedy realnie awansujecie wpis z `lessons.md` do reguły w `AGENTS.md`? Próg częstotliwości występowania, krytyczność, czy bardziej intuicja?
+- **Auto-memory w trakcie kursu.** Zalecacie zostawić ON i regularnie `cat MEMORY.md`, czy wyłączyć (`autoMemoryEnabled: false` / `CLAUDE_CODE_DISABLE_AUTO_MEMORY`) na czas pracy z kursowymi skillami? Jakie błędne wpisy widzieliście w 3. edycji najczęściej?
+- **A/B 3+3 vs realny budżet kursanta.** Eksperyment 3× bez reguły + 3× z regułą jest przekonujący, ale to 6 świeżych sesji per reguła przy ~5h/tydzień. Macie skróconą wersję (np. 1+1 z konkretnym promptem-kanarkiem), która wystarczy do MVP, czy to jest właśnie miejsce, gdzie warto zwolnić i nie skracać?

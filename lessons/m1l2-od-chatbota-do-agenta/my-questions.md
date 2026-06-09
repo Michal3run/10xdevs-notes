@@ -1,0 +1,7 @@
+# m1l2 — Pytania na Q&A
+
+- **Próg "trzeciego promptu" w praktyce.** Heurystyka jest zgrabna, ale nie chroni przed kodyfikowaniem rzeczy jednorazowych w skill. Macie konkretny próg w wewnętrznej pracy (np. "skill, gdy ten sam kontrakt I/O zobaczyłem 3× w 2 tygodniach")? Jak rozpoznajecie skille, które warto zlikwidować, bo przestały być powtarzalne?
+- **Eval Vercela vs skille procesowe vs doradcze.** Tabela 53 % / 79 % / 100 % dotyczy automatycznej aktywacji. Czy skille procesowe (wywoływane jawnie) realnie zachowują się jak ten 100 % z AGENTS.md, czy też mają własne pułapki, których eval nie pokazał (np. agent czyta `description`, ale nie ładuje `references/`)?
+- **Architekt do `/10x-tech-stack-selector`.** Czy Sonnet 4.6 wystarcza do dobrego scoringu starterów, czy dla pierwszej decyzji warto zapłacić Opusem 4.6? Konkretnie: czy widzieliście różnicę w jakości frontmattera (`bootstrapper_confidence`, flagi `has_*`) między modelami?
+- **Skille w repo MVP vs globalnie.** Czy `/10x-tech-stack-selector` zalecacie commitować do repo projektu (żeby zespół miał ten sam kontrakt), czy trzymać w globalnym `~/.claude/skills/`? Co lepiej skaluje się w pracy zespołowej z kursu?
+- **`/10x-stack-assess` — werdykt `significant-friction`.** Jeśli kursant ma istniejący projekt w stacku, który nie spełnia bramki "typed" ani "convention-based", lekcja sugeruje migrację. Czy w 3. edycji widzieliście realnie kogoś, kto migrował (np. dodał TS) na potrzeby kursu, czy raczej wszyscy lądują w `ready-with-compensation`?

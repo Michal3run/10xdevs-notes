@@ -1,0 +1,7 @@
+# m1l5 — Pytania na Q&A
+
+- **Anti-bias trójka — realny efekt.** Czy w 3. edycji widzieliście kursantów, którzy po przejściu devil's advocate / pre-mortem / unknown unknowns realnie zmienili wybór platformy, czy te testy najczęściej kończą się "akceptuję ryzyko, dopisuję do `infrastructure.md`"? Macie statystykę "ile decyzji wraca na warsztat"?
+- **Pages vs Workers dla SSR Astro.** Plan Mode zwykle proponuje `wrangler pages deploy`, ale dla SSR z Astro 6.x Workers bywa lepszym wyborem (`wrangler deploy`). Jak prowadzący kierują kursantów, żeby ta decyzja nie spadła na "agent zaproponował, ja zatwierdziłem" — czy macie konkretny prompt-test, który ujawnia różnicę?
+- **Próg sensowności MCP w 5-tygodniowym MVP.** Lekcja sugeruje "zacznij od CLI, dorzuć MCP, gdy widzisz wzorzec". Czy ktokolwiek z 3. edycji doszedł do tego progu w trakcie kursu, czy raczej dopiero po? Innymi słowy — czy MCP w M1L5 to materiał "wiedz, że istnieje" czy realnie używany w M2/M3?
+- **Minimalny scope tokenu Cloudflare dla 10xCards.** Jakie konkretne uprawnienia ustawiacie w Cloudflare Dashboard dla agenta (Pages Edit / Workers Scripts Edit / D1 Edit / Account Settings Read / itd.)? Macie gotowy preset, który można wkleić, czy każdy zespół konfiguruje od zera?
+- **Migracje schematu z agenta na produkcji.** Drop bazy wprost zostaje człowiekowi. A `prisma migrate deploy` / `supabase db push`? Auto z agenta na staging i ręcznie na prod, czy ręcznie zawsze, mimo że to często operacja idempotentna i zaaplikowana w CI? Gdzie kończycie pracę agenta przy schemacie?

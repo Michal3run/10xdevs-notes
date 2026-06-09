@@ -1,0 +1,7 @@
+# m1l1 — Pytania na Q&A
+
+- **Mini-shape threshold.** Kiedy odpalać `/10x-shape` ponownie w trakcie projektu kursowego, a kiedy to overhead na małą zmianę? Czy jest praktyczny próg (np. >1 nowy FR, zmiana modelu danych, nowy aktor), powyżej którego prowadzący zawsze robią mini-shape, a poniżej idą prosto do promptu zadaniowego?
+- **Co robić, gdy sesja `/10x-shape` utknie.** Agent dociska o szczegóły domenowe, których realnie jeszcze nie wiemy i nie poznamy bez pierwszych użytkowników. Zostawiać w `Open Questions`, czy strzelać best-effort, żeby ruszyć dalej? Jak prowadzący sami sobie z tym radzą?
+- **Edycja PRD vs. regeneracja.** W tygodniu 2–3 okazuje się, że pierwotne założenia były błędne (np. zła persona, źle dobrana reguła biznesowa). Edytować `prd.md` ręcznie, regenerować z poprawionych shape-notes, czy odpalać nową sesję shape? Co lepiej działa w praktyce z perspektywy stabilności kontraktu dla kolejnych skilli?
+- **Brownfield PRD w praktyce.** Czy delta-kontrakt z brownfield shape jest na tyle precyzyjny, że kolejne skille (`/10x-stack-assess`, health-check w bootstrapie) działają out-of-the-box? Czy częściej trzeba ręcznie douzupełniać `Current System` i `Constraints & Preserved Behavior`, bo auto-detekcja markerów nie wystarcza?
+- **Soft-gate vs. słabszy model.** Closing soft-gate to 6 pytań kontrolnych. Czy Sonnet 4.6 (zamiast Opusa 4.6) realnie egzekwuje te checkpointy, czy łatwiej przepuszcza luki? Innymi słowy: czy `/10x-shape` da się bezpiecznie odpalić na tańszym architekcie, czy dla pierwszej sesji warto zapłacić za topowy model?
