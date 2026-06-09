@@ -4,7 +4,7 @@ Personal study notes for the [10xDevs](https://bravecourses.circle.so/c/lekcje-1
 
 ## Structure
 
-- `lessons/` — per-lesson notes (summary, key takeaways, questions, links)
+- `lessons/` — per-lesson notes (`key-takeaways.md`, `my-questions.md`, `links.md`) plus `weekN-overview.md` per week
 - `tips.md` — global positive patterns (append-only, updated by `/10x-course-distill`)
 - `gotchas.md` — global failure modes (append-only, updated by `/10x-course-distill`)
 - `course-context.md` — course overview, schedule, tools, AI patterns
@@ -12,4 +12,4 @@ Personal study notes for the [10xDevs](https://bravecourses.circle.so/c/lekcje-1
 
 ## Companion Repo
 
-MVP project lives in a separate repo: `mvp-<projectname>` (created after Lesson 1).
+MVP project: [Michal3run/mvp-pomostretch](https://github.com/Michal3run/mvp-pomostretch)
