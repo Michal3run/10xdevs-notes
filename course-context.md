@@ -23,7 +23,7 @@
 |--------|---------|-------|
 | M1: Agentic Environment | m1l1–m1l5 | Idea → PRD → Stack → Bootstrap → Deploy |
 | M2: 10xDevs Workflow | m2l1–m2l5 | MVP plan → Architecture → Implementation → Review → Multi-agent |
-| M3: (TBD) | m3l1–m3l5 | — |
+| M3: AI Development Quality & Maintenance | m3l1–m3l5 | Test plan → unit/integration → hooki → E2E → debugowanie |
 | M4: (TBD) | m4l1–m4l5 | — |
 | M5: (TBD) | m5l1–m5l5 | — |
 
@@ -42,6 +42,14 @@
 3. **m2l3** — Implementacja z AI: 80% ready challenge i kontrola kontekstu
 4. **m2l4** — Solo Code Review: weryfikuj kod AI szybko i skutecznie
 5. **m2l5** — Innovate: Więcej ficzerów, mniej czekania - wielowątkowa praca z Agentami
+
+### Module 3 Lessons
+
+1. **m3l1** — Plan testów z AI: quality gates, test-plan i priorytety
+2. **m3l2** — Od planu do testów: implementacja unitów z agentem
+3. **m3l3** — Hooki i triggery: agent, który sam reaguje na błędy
+4. **m3l4** — Testy E2E: Playwright, MCP i multimodalne scenariusze
+5. **m3l5** — Debugowanie z AI: od stack trace do gotowego fixa
 
 ## Per-Lesson Workflow
 
@@ -66,6 +74,8 @@ Full reference: see `10x-cli-reference.md`
 
 ### Skills Index (filled as discovered)
 
+> Quick map of which lesson introduced which skill. For each skill's role and the full detail (flags, artifacts, gotchas), see the matching `lessons/weekN-overview.md`.
+
 | Lesson | Skills |
 |--------|--------|
 | m0l1 | prompts (prework) |
@@ -74,6 +84,16 @@ Full reference: see `10x-cli-reference.md`
 | m1l3 | /10x-bootstrapper |
 | m1l4 | /10x-agents-md, /10x-rule-review, /10x-lesson |
 | m1l5 | /10x-infra-research + Plan Mode |
+| m2l1 | /10x-roadmap |
+| m2l2 | /10x-new, /10x-plan, /10x-plan-review, /10x-implement |
+| m2l3 | /10x-impl-review, /10x-lesson |
+| m2l4 | /10x-research, /10x-frame |
+| m2l5 | git worktree, /goal |
+| m3l1 | /10x-test-plan |
+| m3l2 | /10x-tdd, Stryker (mutation testing) |
+| m3l3 | AI tool hooks, pre-commit (Lefthook / lint-staged / pre-commit) |
+| m3l4 | /10x-e2e, Playwright CLI/MCP/Test Agents |
+| m3l5 | Sentry MCP, runtime log tail, Playwright diagnostics, VLM |
 
 ### Custom Skills (this repo)
 

@@ -59,4 +59,7 @@ Then restart the terminal.
 
 ## Offline Fallback
 
-Artifacts for M1 available at: `C:\src\10xDevs\Downloads\10xdevs3-artifacts-m1\generic\`
+If `10x get` is unavailable, artifacts may be pre-downloaded under:
+`C:\src\10xDevs\Downloads\10xdevs3-artifacts-<module>\generic\`
+
+(e.g. `...-m1\generic\` holds Module 1 lessons `m1l1`–`m1l5`.)

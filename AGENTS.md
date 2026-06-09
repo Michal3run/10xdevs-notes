@@ -14,6 +14,16 @@ This is a personal course-notes repository for the 10xDevs course. Load `course-
 - `lessons-raw/` is gitignored course IP. Per-lesson notes (`key-takeaways.md`, `my-questions.md`, `links.md`) summarize and digest from it but **never paraphrase verbatim** or commit large excerpts. The `/10x-course-distill` skill does NOT read `lessons-raw/` at all — it works only on user-authored `key-takeaways.md`. Layout: `lessons-raw/Week N/mNlN-<slug>.md`
 - `scratch/` is ephemeral — feel free to create/delete files there
 
+## Keeping Root Docs Up To Date
+
+At the end of each week/module (after writing `weekN-overview.md`), sync the root-level summary docs so they never lag behind the lessons:
+
+- `course-context.md` → **Module Map** (fill in the module theme, drop `(TBD)`), add the `### Module N Lessons` list, and extend the **Skills Index** with that module's skills.
+- `10x-cli-reference.md` → keep the **Offline Fallback** path generic (`...-<module>\generic\`), not pinned to one module.
+- `README.md` → update only if the overall structure changes.
+
+Exceptions: `tips.md` and `gotchas.md` stay **append-only** (see below) and are not part of this sync.
+
 ## Skills
 
 - `/10x-course-distill` — run **on-demand** (typically end-of-week or end-of-module) to extract cross-lesson tips/gotchas from `key-takeaways.md` files. Zero entries per week is a valid outcome.
